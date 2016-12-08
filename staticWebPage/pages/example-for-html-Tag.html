@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        header{height:150px;background:#ABCDEF}
+        nav{height:30px;background:#ff9900;margin-top:100px}
+        nav ul li{width:100px;height:30px;float:left;line-height:30px}
+
+        div{margin-top:10px;height:1000px;}
+        section{height:1000px;background:#ABCDEF;width:70%;float:left}
+        article{background:#F90;width:500px;margin:0 auto;text-align:center}
+
+        aside{height:1000px;background:#ABCDEF;width:28%;float:right}
+
+        footer{height:100px;background:#ABCDEF;clear:both;margin-top:10px}
+    </style>
+</head>
+<body>
+<header>
+    <p>这是一个header标签</p>
+    <nav>
+        <ul>
+            <li>首页</li>
+            <li>起夜</li>
+            <li>论坛</li>
+            <li>商城</li>
+            <li>社区</li>
+        </ul>
+    </nav>
+</header>
+<div>
+    <section>
+        <p>这是一个section标签</p>
+        <article>
+            <h2>春晓</h2>
+            <p>
+                春眠不觉晓，<br />
+                处处蚊子咬，<br />
+                打上敌敌畏，<br />
+                不至死多少。<br />
+            </p>
+
+        </article>
+        <hr />
+        <article>
+            <h2>上学歌</h2>
+            <p>
+                太阳当空照，<br />
+                花儿对我笑，<br />
+                小鸟说早早早，你为什么背上小书包?<br />
+                我要炸学校老师不知道，一拉线，赶快跑，<br />
+                轰的一声，学校炸没了。<br />
+            </p>
+
+        </article>
+        <hr />
+        <figure>
+            <figcaption>UFO</figcaption>
+            <p>不明飞行物 Unknown Flying Object</p>
+        </figure>
+        <figure>
+            <dt>DDS</dt>
+            <dd>大屌丝</dd>
+        </figure>
+        <hr />
+        <dialog>
+            <dt>唐僧:悟空，你又调皮了，观音姐姐的月光宝盒怎么能乱扔呢？</dt>
+            <dd>悟空:...(看着)</dd>
+            <dt>唐僧:乱扔是不对的，砸到小朋友怎么办？就算砸不到小朋友，砸到花花草草也是不好的嘛</dt>
+            <dd>悟空:...(纠结)</dd>
+            <dt>唐僧:悟空你想要么？想要你就告诉我呀，你不告诉我怎么知道你想要呢？。。。。</dt>
+            <dd>悟空:我靠!(一棍子抡上去！)</dd>
+        </dialog>
+        <hr />
+        <menu>
+            <li>点击</li>
+            <li>右键单击</li>
+        </menu>
+        <hr />
+        <span contextmenu="candan">右键单击我试试</span>
+        <menu type="context" id="candan">
+            <menuitem label="菜单一" onclick="alert('我是一个寂寞')" icon="http://www.baidu.com/img/baidu_sylogo1.gif"></menuitem>
+        </menu>
+        <hr />
+        <meter min="0" max="10" value="5" low="3" high="7" ></meter>
+        <progress max="100" value="0" id="pro"></progress>
+        <script>
+            var pro =document.getElementById('pro');
+            setInterval(function(){
+                pro.value+=1;
+            },100);
+        </script>
+        <hr />
+        <details>
+            <dt>这是一个问题？</dt>
+            <dd>to be or not to be</dd>
+            <dt>这是一个问题？</dt>
+            <dd>to be or not to be</dd>
+            <dt>这是一个问题？</dt>
+            <dd>to be or not to be</dd>
+        </details>
+        <hr />
+        <ruby>夼<rp>(</rp><rt>kuang</rt><rp>)</rp></ruby>
+        <hr />
+        女人<mark>最喜欢做的事情</mark>就是逛街。。。吃零食。。逛街。。吃零食，偶尔还会呜呜的哭，
+        于是总结了下女人:逛吃逛吃逛吃逛吃。。。呜呜呜~·
+    </section>
+    <aside>
+        <p>这是一个aside标签</p>
+        <hgroup>
+            <h3>女生宿舍为何频频被盗</h3>
+            <h3>两百头母猪为何半夜惨死</h3>
+            <h3>是人性的扭曲？</h3>
+            <h3>还是道德的沦丧！</h3>
+        </hgroup>
+    </aside>
+</div>
+<footer>
+    <p>这是一个footer标签</p>
+    <hr />
+    <small>法律条文</small>
+    <small>联系我们</small>
+    <small>客户意见</small>
+    <small>商户合作</small>
+</footer>
+</body>
+</html>

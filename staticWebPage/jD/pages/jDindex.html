@@ -1,0 +1,222 @@
+<!--
+   1、学习模仿制作京东主页面
+   2、主要用到留个部分
+      2.1、 顶部信息栏    header
+      2.2、 顶部搜索部分  search-container
+      2.3、 主要视窗部分  main
+      2.4、 栏目精选部分  column
+      2.5、 底部说明部分  footer-service
+      2.6、 底部版权部分  footer-copyright
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Franklin</title>
+    <link href="../../jD/public/imgs/Jd32X32.ico" rel="shortcut icon">
+    <link href="../../jD/asset/css/index.css" rel="stylesheet">
+
+<<<<<<< HEAD
+=======
+        ul li{
+            display: block;
+            float:left;
+            list-style-type: none;
+            text-align: center;
+            font-size: 14px;
+        }
+        .service{
+            position: absolute;
+            top: initial;
+            right: 12%;
+            height: 30px;
+            line-height: 30px;
+        }
+        .service li:not(:last-child)::after{
+            content: " ";
+            position: absolute;
+            bottom:0;
+            right: -1px;
+            margin-top: 25px;
+            height: 12px;
+            border: 1px solid #f1f1f1;
+        }
+        .service li:nth-child(n+3):hover{
+            background-color: white;
+        }
+
+        .city{
+            display: inline-block;
+            line-height: 30px;
+        }
+        .search-container{
+            padding-left:12%;
+        }
+        input.search {
+            border: 2px solid #b61d1d;
+            height: 35px;
+            width: 445px;
+            padding-left: 10px;
+            padding-right: 95px;
+            font-size: 16px;
+            color: black;
+            font-family: "Microsoft YaHei UI";
+            outline:none;
+        }
+        .search-box {
+            padding-top: 23px;
+            margin-left: 35px;
+        }
+        img.logo {
+            vertical-align: middle;
+        }
+        input.search-btn {
+             border: 0;
+             background: #b61d1d;
+             color: white;
+             height: 37px;
+             width: 83px;
+             margin-left: -91px;
+            outline: none;
+         }
+        ul.search-box-tips {
+            min-width: 300px;
+             display: flex;
+             display: -webkit-flex;
+             justify-content: space-around;
+              position: absolute;
+              margin-top: 6px;
+              color: #909090;
+            font-size: 12px;
+            font-family: "Microsoft YaHei UI";
+          }
+        ul.search-box-tips li{
+            flex:1;
+        }
+        input.buys {
+            border: 1px solid #dfdfdf;
+            background-color: #f9f9f9;
+            height: 39px;
+            width: 120px;
+            position: absolute;
+            right: 12%;
+            outline: none;
+        }
+    </style>
+>>>>>>> origin/master
+</head>
+<body>
+<div class="page">
+    <!--顶部信息栏开始-->
+    <header class="header">
+        <div class="header-nav">
+            <div><!--
+                -->
+                <span style="vertical-align: 50%">送至:</span>
+                <ul class="city">
+                    <li>北京<span>∨</span></li>
+                </ul>
+            </div>
+            <ul class="service">
+                <li>您好,请登录</li>
+                <li>注册</li>
+                <li>我的订单</li>
+                <li>我的京东</li>
+                <li>京东会员</li>
+                <li>企业采购</li>
+                <li>手机京东</li>
+                <li>关注京东</li>
+                <li>客户服务</li>
+                <li>网站导航</li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <img src="../../jD/public/imgs/jdlogo.png" class="logo" style="display:inline-block">
+            <div class="search-box" style="display: inline-block">
+                <input  type="text" class="search" placeholder="快抢购!" />
+                <ul class="search-box-tips">
+                    <li>笔记本</li>
+                    <li>9.9包邮</li>
+                    <li>旅行用品</li>
+                    <li>世界杯</li>
+                    <li>保温杯</li>
+                </ul>
+                <input  type="button" class="search-btn" value="搜索">
+                <input  type="button" class="buys" value="我的购物车"/>
+            </div>
+        </div>
+    </header>
+    <!--顶部信息栏结束-->
+
+    <!--主要视窗部分开始-->
+    <div class="main" style="margin-top: 30px;padding-left: 0;overflow-x: hidden">
+        <img class="bg" src="../../jD/public/imgs/bg.jpg"/>
+        <nav class="top-nav">
+            <div class="category" style="display: inline-block">全部商品分类</div>
+
+            <ul class="category-item" style="display: inline-block">
+                <li class="item">服装城</li>
+                <li class="item">美妆馆</li>
+                <li class="item">京东超市</li>
+                <li class="item">生鲜</li>
+                <li class="item">全球购</li>
+                <li class="item">团购</li>
+                <li class="item">闪购</li>
+                <li class="item">金融</li>
+                <li class="item">拍卖</li>
+            </ul>
+        </nav>
+        <nav class="left-nav">
+            <ul class="detail">
+                <li class="detail-item"><h3><span>家用电器</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>手机、数码、京东通信</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>电脑、办公</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>家居、家具、家装、厨具</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>男装、女装、童装、内衣</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>个护化妆、清洁用品、宠物</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>鞋靴、箱包、珠宝、奢侈品</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>运动户外、钟表</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>汽车、汽车用品</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>家用电器</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>母婴、玩具乐器</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>食品、酒类、生鲜、特产</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>医药保健</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>图书、音像，电子书</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>彩票、充值、服务、票务</span><span class="right-arrow">&gt;</span></h3></li>
+                <li class="detail-item"><h3><span>理财、众筹、白条、保险</span><span class="right-arrow">&gt;</span></h3></li>
+            </ul>
+        </nav>
+        <article class="content">
+
+        </article>
+        <aside class="aside">
+
+        </aside>
+
+    </div>
+    <!--主要视窗部分结束-->
+
+    <!--栏目精选部分开始-->
+    <div class="column">
+        <!--栏目精选部分-->
+    </div>
+    <!--栏目精选部分结束-->
+
+    <footer class="footer">
+        <!--底部说明部分开始-->
+        <div class="footer-services">
+            <!--底部服务部分-->
+        </div>
+        <!--底部说明部分结束-->
+
+        <!--底部版权部分开始-->
+        <div class="copyright">
+            <!--版权说明-->
+        </div>
+
+        <!--底部版权部分结束-->
+    </footer>
+</div>
+
+</body>
+</html>
