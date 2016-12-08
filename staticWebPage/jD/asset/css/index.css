@@ -184,7 +184,6 @@ li.detail-item {
     height: 29px;
     text-align: -webkit-left;
     color: white;
-    padding-left: 10px;
     cursor: pointer;
 }
 .right-arrow
@@ -196,11 +195,21 @@ h3 {
     line-height: 29px;
     font-size: 14px;
 }
-li.detail-item:hover{
+li.detail-item a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+li.detail-item a:hover{
     background-color: white;
     color: #b61d1d;
     border-right: 0;
 }
+
 .right-arrow{
     color: white !important;
 }
@@ -223,10 +232,21 @@ img.bg {
     min-height: 465px;
     background-color: #d9d9d9;
 }
-.detail-item:hover::after{
-    content: '<h1>我</h1>';
-    width:20px;height: 20px;
-    background: wheat
-
-
-}
+/*.detail-item:hover::after{*/
+    /*content: '<h1>我</h1>';*/
+    /*width:20px;height: 20px;*/
+    /*background: wheat*/
+/*}*/
+/*#item1,#item2,#item3,#item4{*/
+    /*display: none;*/
+/*}*/
+/*#item1:hover:target,#item2:hover:target,#item3:hover:target,#item4:hover:target{*/
+/*display: block;*/
+/*}*/
+/*section{*/
+    /*display: none;*/
+/*}*/
+/*#ddddd:hover #item1{*/
+    /*display: block;*/
+    /*z-index: 99999;*/
+/*}*/
