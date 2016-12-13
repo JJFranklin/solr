@@ -174,7 +174,7 @@ ul.detail {
     display: flex;
     flex-direction: column;
     background: #c81623;
-    width: 208px;
+    width: 209px;
     border: 1px solid #c81623;
 }
 nav.left-nav {
@@ -184,8 +184,8 @@ li.detail-item {
     height: 29px;
     text-align: -webkit-left;
     color: white;
-    padding-left: 10px;
     cursor: pointer;
+    /*position: relative;*/
 }
 .right-arrow
 {
@@ -196,11 +196,21 @@ h3 {
     line-height: 29px;
     font-size: 14px;
 }
-li.detail-item:hover{
+li.detail-item a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+li.detail-item a:hover{
     background-color: white;
     color: #b61d1d;
     border-right: 0;
 }
+
 .right-arrow{
     color: white !important;
 }
@@ -217,15 +227,75 @@ img.bg {
     margin-left: 27.5%;
     margin-right: 17.2%;
     border-bottom: 1px solid #b61d1d;
+    /*border-left:1px solid #b61d1d;*/
     border-right:1px solid #b61d1d;
     min-width: 530px;
     min-height: 465px;
     background-color: #d9d9d9;
 }
-.detail-item:hover::after{
-    content: '<h1>我</h1>';
-    width:20px;height: 20px;
-    background: wheat
-
-
+/*.detail-item:hover::after{*/
+    /*content: '<h1>我</h1>';*/
+    /*width:20px;height: 20px;*/
+    /*background: wheat*/
+/*}*/
+/*#item1,#item2,#item3,#item4{*/
+    /*display: none;*/
+/*}*/
+/*#item1:hover:target,#item2:hover:target,#item3:hover:target,#item4:hover:target{*/
+/*display: block;*/
+/*}*/
+/*section{*/
+    /*display: none;*/
+/*}*/
+/*#ddddd:hover #item1{*/
+    /*display: block;*/
+    /*z-index: 99999;*/
+/*}*/
+.detail-content{
+    display: none;
+    position: absolute;
+    border-left: 0;
+    right: 0;
+    margin-right: -744px;
+    background: white;
+    height: 464px;
+    width: 743px;
 }
+.detail-item:hover .detail-content {
+    display: block;
+    top:0;
+    overflow: hidden;
+    border-right: 1px solid #d9d9d9;
+}
+ul.goods {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.goods-item{
+    margin-right: 30px;
+}
+
+.goods-item span {
+    display: inline-block;
+    height: inherit;
+    line-height: 22px;
+}
+span.goodsArrow {
+    background-color: #5c5251;
+    width: 15px;
+}
+li.goods-item {
+    background: #7c7171;
+    height: 22px;
+    padding-left: 8px;
+}
+li.goods-item:hover{
+    color: white;
+}
+
+
+
+
+
+
+
