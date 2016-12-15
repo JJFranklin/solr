@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -38,7 +37,6 @@ body{
 }
 .header-nav>ul li{
     position: relative;
-    /*background-color: #ABCDEF;*/
     height: 30px;
     cursor: pointer;
     width:80px;
@@ -143,10 +141,6 @@ nav.top-nav {
 }
 .category-item{
     min-width: 300px;
-    /*display: flex;*/
-    /*display: -webkit-flex;*/
-    /*justify-content: space-around;*/
-
 }
 li.item {
     font-size: 16px;
@@ -227,30 +221,12 @@ img.bg {
     margin-left: 27.5%;
     margin-right: 17.2%;
     border-bottom: 1px solid #b61d1d;
-    /*border-left:1px solid #b61d1d;*/
     border-right:1px solid #b61d1d;
     min-width: 530px;
     min-height: 465px;
     background-color: #d9d9d9;
 }
-/*.detail-item:hover::after{*/
-    /*content: '<h1>我</h1>';*/
-    /*width:20px;height: 20px;*/
-    /*background: wheat*/
-/*}*/
-/*#item1,#item2,#item3,#item4{*/
-    /*display: none;*/
-/*}*/
-/*#item1:hover:target,#item2:hover:target,#item3:hover:target,#item4:hover:target{*/
-/*display: block;*/
-/*}*/
-/*section{*/
-    /*display: none;*/
-/*}*/
-/*#ddddd:hover #item1{*/
-    /*display: block;*/
-    /*z-index: 99999;*/
-/*}*/
+
 .detail-content{
     display: none;
     position: absolute;
