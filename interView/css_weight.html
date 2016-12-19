@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weight</title>
+    <link href="css.css" rel="stylesheet">
+    <style>
+        #div1,.class2,#div3{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="div1" style="background-color: red">div1</div>
+<div id="div2" class="class2">div2</div>
+<div id="div3" >div3</div>
+
+
+</body>
+
+</html>
+<script>
+//    function doSomething(){
+//       var car="benz";
+//    }
+//    alert(car);   //报错
+
+//    var car ="BMS";
+//    alert(car);
+//
+//(function(car){
+//    var car="dsds";
+//    alert(car);
+//    if(true) {
+//        var car = "GM";
+//        alert(car);
+//    }
+//    alert(car);
+//})();
+    function A(){
+        this.a=[];
+    }
+    function B(){
+        this.b=function(){};
+    }
+    B.prototype=new A();
+     var obj1=new B();
+     var obj2=new B();
+     obj1.a.push(1,2,3);
+
+     obj2.a.push(4,5,6);
+     console.log(obj1.a);
+console.log(obj2.a);
+</script>
