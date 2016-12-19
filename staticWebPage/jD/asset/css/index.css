@@ -174,7 +174,7 @@ ul.detail {
     display: flex;
     flex-direction: column;
     background: #c81623;
-    width: 208px;
+    width: 209px;
     border: 1px solid #c81623;
 }
 nav.left-nav {
@@ -185,6 +185,7 @@ li.detail-item {
     text-align: -webkit-left;
     color: white;
     cursor: pointer;
+    /*position: relative;*/
 }
 .right-arrow
 {
@@ -250,3 +251,101 @@ img.bg {
     /*display: block;*/
     /*z-index: 99999;*/
 /*}*/
+.detail-content{
+    display: none;
+    position: absolute;
+    border-left: 0;
+    right: 0;
+    margin-right: -744px;
+    background: white;
+    height: 464px;
+    width: 743px;
+}
+.detail-item:hover .detail-content {
+    display: block;
+    top:0;
+    overflow: hidden;
+    border-right: 1px solid #d9d9d9;
+}
+ul.goods {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.goods-item{
+    margin-right: 30px;
+}
+
+.goods-item span {
+    display: inline-block;
+    height: inherit;
+    line-height: 22px;
+}
+span.goodsArrow {
+    background-color: #5c5251;
+    width: 15px;
+}
+li.goods-item {
+    background: #7c7171;
+    height: 22px;
+    padding-left: 8px;
+}
+li.goods-item:hover{
+    color: white;
+}
+.goods .goods-item:first-child{
+    background-color:#c81623;
+}
+.goods .goods-item:first-child span:last-child{
+    background-color:#b1191a;
+}
+section.item-detail {
+    margin-top: 30px;
+    color: #737373;
+    display: inline-flex;
+}
+ul.details-nav {
+    display: inline-flex;
+    margin-left: 20px;
+    margin-right: 31px;
+    color: #737373;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #d9d9d9;
+}
+li.details-nav-item {
+    width: 80px;
+    color: #737373;
+    padding:10px 0;
+    font-size: 13px;
+    font-family: -webkit-pictograph;
+}
+li.details-nav-item:hover{
+    color: #c2191a;
+}
+span.nav-header {
+    padding-top: 10px;
+    margin-left: 30px;
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+}
+li.details-nav-item::before{
+    content: " ";
+    height: 14px;
+    border-right: 1px solid #d9d9d9;
+    display: block;
+    position: absolute;
+    margin-top: 1px;
+}
+/*li.details-nav-item:nth-child(7n+1)::before*/
+/*{*/
+    /*border: 0;*/
+/*}*/
+li.details-nav-item:last-child{
+    padding-bottom: 25px;
+}
+
+
+
+
+
+
