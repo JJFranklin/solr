@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>scope</title>
+</head>
+<body>
+<div ng-controller="IndexAngular">
+    <ol>
+        <li ng-repeat="name in names">
+            {{name}} from {{Title}}
+        </li>
+    </ol>
+</div>
+<div ng-controller="SayHello">
+      I'm a {{sex}}
+</div>
+
+</body>
+<script src="angular.min1.21.js"></script>
+<script src="angular_scope.js"></script>
+</html>

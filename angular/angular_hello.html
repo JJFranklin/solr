@@ -7,8 +7,10 @@
 </head>
 <body>
 <div ng-controller="helloAngular">
-    <p>{{info.name}},Angular</p>
-    <p>{{dd.sex}}</p>
+    <!--<p>{{info.name}},Angular</p>-->
+    <!--<p>{{dd.sex}}</p>-->
+    <p><span ng-bind="info.name"></span>Angular</p>
+    <p><span ng-bind="dd.sex"></span>Angular</p>
 </div>
 
 </body>
