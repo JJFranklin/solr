@@ -4,7 +4,12 @@ const cleanPlugin = require("clean-webpack-plugin");
 
 module.exports = {
     entry:{
-        index:"./src/index.js"
+        index:"./src/index.js",
+        app:"./src/app.js"
+    },
+    devtool:"inline-source-map",
+    devServer:{
+        contentBase:"./dist"
     },
     output:{
         filename:"[name]-bundle.js",
